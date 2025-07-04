@@ -74,10 +74,10 @@ export function SignInForm({
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setLoading(true);
     try {
-      const { data, error } = await api.post('/api/users/sign-in', {
+      const { data, error } = await api.post('/api/v1/users/sign-in', {
         email: values.email,
         password: values.password,
-        remember: values.rememberMe
+        rememberMe: values.rememberMe
       });
 
       if (error) {

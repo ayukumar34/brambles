@@ -74,7 +74,7 @@ export function SignUpForm({
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setLoading(true);
     try {
-      const { data, error } = await api.post('/api/users/sign-up', {
+      const { data, error } = await api.post('/api/v1/users/sign-up', {
         firstName: values.firstName,
         lastName: values.lastName,
         email: values.email,

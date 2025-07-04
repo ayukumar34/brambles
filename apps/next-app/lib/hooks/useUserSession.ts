@@ -36,7 +36,7 @@ export function useUserSession(): UserSessionState & {
     try {
       setState(prev => ({ ...prev, loading: true, error: null }))
 
-      const { data, error } = await api.get<User>('/api/users/me')
+      const { data, error } = await api.get<User>('/api/v1/users/me')
 
       if (error || !data) {
         throw new Error(error?.message || 'Failed to fetch user')

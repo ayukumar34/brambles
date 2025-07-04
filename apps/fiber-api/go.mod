@@ -1,4 +1,4 @@
-module github.com/ayukumar34/apps/fiber-api
+module github.com/ayukumar34/brambles/apps/fiber-api
 
 go 1.24.4
 
