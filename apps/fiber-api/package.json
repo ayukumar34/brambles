@@ -1,0 +1,8 @@
+{
+  "name": "fiber-api",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "go build -o bin/fiber-api cmd/main.go",
+    "dev": "go run cmd/main.go"
+  }
+}
